@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNetUtil.Core", "MNetUtil.Core\MNetUtil.Core.csproj", "{CCE1502C-43BC-4819-9B38-67D6ABA25366}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNetUtil.Test", "MNetUtil.Test\MNetUtil.Test.csproj", "{31F82077-1AFA-460C-8E73-01CAB0BFC34A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CCE1502C-43BC-4819-9B38-67D6ABA25366}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCE1502C-43BC-4819-9B38-67D6ABA25366}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCE1502C-43BC-4819-9B38-67D6ABA25366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F82077-1AFA-460C-8E73-01CAB0BFC34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F82077-1AFA-460C-8E73-01CAB0BFC34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F82077-1AFA-460C-8E73-01CAB0BFC34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F82077-1AFA-460C-8E73-01CAB0BFC34A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
