@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MNetUtil.Core;
 
 namespace MNetUtil.Test.Core
 {
@@ -6,8 +7,10 @@ namespace MNetUtil.Test.Core
     public class FileServerTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestNew()
         {
+            FileServer fileServer = new FileServer(8080, "ROOT");
+            fileServer.Start().Wait();
         }
     }
 }
