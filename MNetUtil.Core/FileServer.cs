@@ -7,7 +7,7 @@ using System.Web;
 
 namespace MNetUtil.Core
 {
-    internal class FileServer
+    public class FileServer
     {
         private readonly HttpListener _listener;
         private readonly string _rootDirectory;
