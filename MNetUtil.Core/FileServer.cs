@@ -37,7 +37,7 @@ namespace MNetUtil.Core
             _listener.Stop();
         }
 
-        protected void ProcessRequest(HttpListenerContext context)
+        public virtual void ProcessRequest(HttpListenerContext context)
         {
             string requestPath = context.Request.Url.AbsolutePath.TrimStart('/');
             string targetPath = Path.Combine(_rootDirectory, requestPath);
@@ -58,7 +58,7 @@ namespace MNetUtil.Core
             }
         }
 
-        protected void ProcessDirectory(HttpListenerContext context, string directoryPath)
+        public void ProcessDirectory(HttpListenerContext context, string directoryPath)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace MNetUtil.Core
             }
         }
 
-        protected void ProcessFile(HttpListenerContext context, string filePath)
+        public void ProcessFile(HttpListenerContext context, string filePath)
         {
             try
             {
