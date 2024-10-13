@@ -39,11 +39,11 @@ namespace MNetUtil.Core
 
         public virtual void ProcessRequest(HttpListenerContext context)
         {
-            string requestPath = context.Request.Url.AbsolutePath.TrimStart('/');
-            string targetPath = Path.Combine(_rootDirectory, requestPath);
-            targetPath = HttpUtility.UrlDecode(targetPath);
+            string path = context.Request.Url.AbsolutePath.TrimStart('/');
+            path = HttpUtility.UrlDecode(path);
+            string targetPath = Path.Combine(_rootDirectory, path);
 
-            if (string.IsNullOrWhiteSpace(requestPath) || Directory.Exists(targetPath))
+            if (Directory.Exists(targetPath))
             {
                 ProcessDirectory(context, targetPath);
             }
