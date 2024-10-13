@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MNetUtil.Core;
 
-namespace MNetUtil.Test.Core
+namespace MNetUtil.Test.CoreTest
 {
     [TestClass]
     public class FileServerTest
