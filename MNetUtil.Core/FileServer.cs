@@ -58,7 +58,7 @@ namespace MNetUtil.Core
             }
         }
 
-        public void ProcessDirectory(HttpListenerContext context, string directoryPath)
+        public virtual void ProcessDirectory(HttpListenerContext context, string directoryPath)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace MNetUtil.Core
             }
         }
 
-        public void ProcessFile(HttpListenerContext context, string filePath)
+        public virtual void ProcessFile(HttpListenerContext context, string filePath)
         {
             try
             {
